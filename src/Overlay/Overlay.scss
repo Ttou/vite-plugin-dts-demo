@@ -1,0 +1,24 @@
+:root {
+  --wc-overlay-z-index: 1;
+  --wc-overlay-background: rgb(0 0 0 / 70%);
+}
+
+.wc-fade-enter-active,
+.wc-fade-leave-active {
+  transition: opacity 0.3s ease-out;
+}
+
+.wc-fade-enter-from,
+.wc-fade-leave-to {
+  opacity: 0;
+}
+
+.wc-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--wc-overlay-z-index);
+  width: 100%;
+  height: 100%;
+  background: var(--wc-overlay-background);
+}
